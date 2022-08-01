@@ -38,17 +38,57 @@ header{
 
 header h1{
     position: fixed;
-    left: 2%;
+    left: 0%;
     top: 12px;
     right: 0;
     justify-items: center;
     animation: allyouwant 5s linear 0s infinite alternate-reverse fill-mode;
 }
 
-#all span{
+.all{
+    font-family: 'satisfy','Courier New', Courier, monospace;
+    animation: allyouwant 5s linear 2s infinite alternate-reverse both;
+}
+
+
+@keyframes allyouwant {
+    
+    0%{
+        text-decoration: dotted;
+        font-style: oblique;
+        text-decoration: double;
+        display: flex;
+        left: 0%;
+        top: 12px;
+        
+    }
+
+    50%{
+        font-style: oblique;
+        text-decoration: double;
+        display: flex;
+        left: 10%;
+        top: 12px;
+        
+    }
+    100%{
+        font-style: oblique;
+        text-decoration: double;
+        display: flex;
+        left: 20%;
+        top: 12px;
+        
+    }
+}
+
+
+
+.all span{
     font-style: italic;
     color: chocolate;
 }
+
+
 
 #nav{
     position: fixed;
@@ -77,21 +117,3 @@ a:hover{
     font-size: 15px;
 }
 
-@keyframes allyouwant {
-    0%{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: aquamarine;
-        position: relative;
-        left: 25;
-        top: 25;}
-    50% {
-        font-family:Geneva, Verdana, sans-serif;
-        color: rgb(56, 124, 101);
-        position: relative;
-        left: 50;
-        top: 56;}
-    100%{
-        
-    }
-
-}
